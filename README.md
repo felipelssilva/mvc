@@ -1,8 +1,10 @@
 # mvc
 test project, creating my own MVC
 
+======
 
 ## This is a examples for querys
+------
 
 ```php
 <?php
@@ -43,9 +45,10 @@ $db->query(
 );
 ```
 
-
+======
 
 ## This is a examples for querys inside the models
+------
 
 ```php
 <?php
@@ -84,4 +87,43 @@ $modelo->db->query(
  'SELECT * FROM tabela WHERE campo = ? AND outro_campo = ?',
  array( 'valor', 'valor' )
 );
+```
+
+======
+
+## Criando um controller
+------
+
+Os controllers devem ser inseridos na pasta “App/Controllers” com o seguinte formato de nome:
+
+* Exemplo-Controller.php
+
+Mantendo sempre a primeira letra de cada palavra em maiúsculo!
+
+
+```php
+<?php
+class ExemploController extends MainController
+{
+   /* Aqui vem nossas ações */
+}
+```
+
+
+Apenas criando a nossa classe não fará a aplicação funcionar, temos que ter pelo menos uma ação (método):
+
+```php
+<?php
+class ExemploController extends MainController
+{
+ /* URL: dominio.com/exemplo/ */
+ public function index() {
+ 
+ /* Carrega o modelo */
+ $modelo = $this->load_model('exemplo/exemplo-model');
+ 
+ /* Carrega o view */
+ require_once ABSPATH . '/views/exemplo/exemplo-view.php';
+ }
+}
 ```
