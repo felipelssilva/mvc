@@ -187,6 +187,43 @@ echo '</pre>';
 <p>Include your site or data in this view...</p>
 ```
 
+
+## Como funcionam as permissões?
+
+Na verdade, você é quem escolhe como funcionam as permissões.
+
+O formulário de cadastro terá um campo onde você separa as permissões por vírgula, por exemplo:
+
+* acessar-home, gerenciar-noticias, abrir-modelo-adm, e assim por diante...
+
+Em seguida, é só verificar no controller se o usuário tem aquela permissão, por exemplo:
+
+```php
+/* Verifica se o usuário tem a permissão para acessar essa página */
+if (!$this->check_permissions('permissao-necessaria', $this->userdata['user_permissions'])) {
+ 
+ /* Exibe uma mensagem */
+ echo 'Você não tem permissões para acessar essa página.';
+ 
+ /* Finaliza aqui */
+ return;
+}
+```
+
+Simples assim!
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 > ### Restricting direct access to files
