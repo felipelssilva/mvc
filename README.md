@@ -178,7 +178,7 @@ The views are in the "App/Views" folder. Usually separated into their own folder
 <?php
 echo '<h2>Model data.</h2>';
 echo '<pre>';
-print_r( $model );
+print_r( $modelo );
 echo '</pre>';
 ?>
 
