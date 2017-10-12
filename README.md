@@ -1,10 +1,7 @@
 # mvc
 test project, creating my own MVC
 
-======
-
 ## This is a examples for querys
-------
 
 ```php
 <?php
@@ -45,10 +42,7 @@ $db->query(
 );
 ```
 
-======
-
 ## This is a examples for querys inside the models
-------
 
 ```php
 <?php
@@ -89,10 +83,7 @@ $modelo->db->query(
 );
 ```
 
-======
-
 ## Criando um controller
-------
 
 Os controllers devem ser inseridos na pasta “App/Controllers” com o seguinte formato de nome:
 
