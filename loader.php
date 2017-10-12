@@ -22,7 +22,7 @@ if ( ! defined('DEBUG') || DEBUG === false ) {
 }
 
 /* Funções globais */
-require_once ABSPATH . '/Includes/Functions/Function-Global.php';
+require_once ABSPATH . '/Includes/Functions/function-Global.php';
 
 /* Carrega a aplicação */
 $tutsup_mvc = new TutsupMVC();
