@@ -111,10 +111,10 @@ class ExemploController extends MainController
  public function index() {
  
  /* Carrega o modelo */
- $modelo = $this->load_model('exemplo/exemplo-model');
+ $modelo = $this->load_model('Exemplo/Exemplo-Model');
  
  /* Carrega o view */
- require_once ABSPATH . '/views/exemplo/exemplo-view.php';
+ require_once ABSPATH . 'App/Views/Exemplo/Exemplo-View.php';
  }
 }
 ```
