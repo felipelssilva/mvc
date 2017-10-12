@@ -83,14 +83,13 @@ $modelo->db->query(
 );
 ```
 
-## Criando um Controller
+## Creating a Controller
 
-Os controllers devem ser inseridos na pasta “App/Controllers” com o seguinte formato de nome:
+The controllers must be inserted in the "App/Controllers" folder with the following name format:
 
-* Exemplo-Controller.php
+* Example-Controller.php
 
-Mantendo sempre a primeira letra de cada palavra em maiúsculo!
-
+Always keep the first letter of each word in capital letters!
 
 ```php
 <?php
@@ -101,7 +100,7 @@ class ExemploController extends MainController
 ```
 
 
-Apenas criando a nossa classe não fará a aplicação funcionar, temos que ter pelo menos uma ação (método):
+Just creating our class will not make the application work, we have to have at least one action (method):
 
 ```php
 <?php
@@ -119,21 +118,21 @@ class ExemploController extends MainController
 }
 ```
 
-## Criando um Model
+## Creating a Model
 
-Os modelos ficam dentro da pasta “App/Models”.
+The templates are inside the "App/Models" folder.
 
-Apenas por convenção de nomes, criaremos meus modelos com o seguinte formato:
+Just by name naming, I'll create my templates in the following format:
 
-* Modelo-Model.php
+* Model-Model.php
 
-Sempre com o mesmo nome do seu controller.
+Always with the same name as your controller.
 
-E Mantendo a primeira letra de cada palavra em maiúsculo!
+E Keeping the first letter of each word in capital letters!
 
-Para nosso exemplo, meu modelo ficou com o seguinte note:
+For our example, my model has the following note:
 
-* Exemplo-Model.php
+* Example-Model.php
 
 ```php
 <?php
@@ -169,11 +168,11 @@ public function __construct( $db = false, $controller = null ) {
 }
 ```
 
-## Criando um View
+## Creating a View
 
-Agora que já temos um controlador e um modelo, precisamos de um view para exibir os dados.
+Now that we have a controller and a model, we need a view to display the data.
 
-Os views ficam na pasta “App/Views. Normalmente separados em suas próprias pastas.
+The views are in the "App/Views" folder. Usually separated into their own folders.
 
 ```php
 <?php
