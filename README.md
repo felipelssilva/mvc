@@ -93,9 +93,9 @@ Always keep the first letter of each word in capital letters!
 
 ```php
 <?php
-class ExemploController extends MainController
+class ExampleController extends MainController
 {
-	/* Aqui vem nossas ações */
+	/* Here comes our actions */
 }
 ```
 
@@ -104,16 +104,16 @@ Just creating our class will not make the application work, we have to have at l
 
 ```php
 <?php
-class ExemploController extends MainController
+class ExampleController extends MainController
 {
-	/* URL: dominio.com/exemplo/ */
+	/* URL: dominio.com/example/ */
 	public function index() {
 
-		/* Carrega o modelo */
-		$modelo = $this->load_model('Exemplo/Exemplo-Model');
+		/* Load the model */
+		$modelo = $this->load_model('Example/Example-Model');
 
-		/* Carrega o view */
-		require_once ABSPATH . 'App/Views/Exemplo/Exemplo-View.php';
+		/* Load the view */
+		require_once ABSPATH . 'App/Views/Example/Example-View.php';
 	}
 }
 ```
@@ -136,35 +136,35 @@ For our example, my model has the following note:
 
 ```php
 <?php
-class ExemploModel extends MainModel
+class ExampleModel extends MainModel
 {
 /**
-* Construtor para essa classe
+* Constructor for this class
 *
-* Configura o DB, o controlador, os parâmetros e dados do usuário.
+* Configures the DB, controller, parameters and user data.
 *
 * @since 0.1
 * @access public
-* @param object $db Objeto da nossa conexão PDO
-* @param object $controller Objeto do controlador
+* @param object $db Object of our PDO connection
+* @param object $controller Controller Object
 */
 public function __construct( $db = false, $controller = null ) {
-	/* Configura o DB (PDO) */
+	/* Configure the DB (PDO) */
 	$this->db = $db;
 
-	/* Configura o controlador */
+	/* Set the controller */
 	$this->controller = $controller;
 
-	/* Configura os parâmetros */
+	/* Configure the parameters */
 	$this->parametros = $this->controller->parametros;
 
-	/* Configura os dados do usuário */
+	/* Configures user data */
 	$this->userdata = $this->controller->userdata;
 
-	echo 'Modelo carregado... <br>';
+	echo 'Model load... <br>';
 }
 
-/* Crie seus próprios métodos daqui em diante */
+/* Create your own methods from now on */
 }
 ```
 
@@ -176,13 +176,13 @@ The views are in the "App/Views" folder. Usually separated into their own folder
 
 ```php
 <?php
-echo '<h2>Dados do modelo.</h2>';
+echo '<h2>Model data.</h2>';
 echo '<pre>';
-print_r( $modelo );
+print_r( $model );
 echo '</pre>';
 ?>
 
-<h2>Pronto</h2>
+<h2>Ready</h2>
 
-<p>Inclua seu site ou dados neste view...</p>
+<p>Include your site or data in this view...</p>
 ```
