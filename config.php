@@ -17,13 +17,13 @@ define( 'HOME_URI', 'http://localhost/projeto/mvc' );
 define( 'HOSTNAME', 'localhost' );
 
 /* Nome do DB */
-define( 'DB_NAME', 'dbname' );
+define( 'DB_NAME', 'tutsup' );
 
 /* Usuário do DB */
-define( 'DB_USER', 'dbuser' );
+define( 'DB_USER', 'root' );
 
 /* Senha do DB */
-define( 'DB_PASSWORD', 'dbpasswd' );
+define( 'DB_PASSWORD', '' );
 
 /* Charset da conexão PDO */
 define( 'DB_CHARSET', 'utf8' );
