@@ -186,3 +186,13 @@ echo '</pre>';
 
 <p>Include your site or data in this view...</p>
 ```
+
+
+> ### Restricting direct access to files
+> It is important that you keep in mind that more knowledgeable users about PHP and HTML can understand how the system works and try to execute files directly. To restrict direct access to any content in your MVC system, add the following line in the header of your code:
+>
+> Restrict direct access to files
+> ```php <?php if ( ! defined('ABSPATH')) exit; ?> ```
+
+
+
