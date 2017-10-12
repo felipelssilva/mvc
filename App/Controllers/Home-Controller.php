@@ -22,7 +22,7 @@ class HomeController extends MainController
  	/** Carrega os arquivos do view **/
  	require ABSPATH . '/App/Views/_includes/_layout/Header.php';
  	require ABSPATH . '/App/Views/_includes/_layout/Menu.php';
- 	require ABSPATH . '/App/Views/home/Home-View.php';
+ 	require ABSPATH . '/App/Views/Home/Home-View.php';
  	require ABSPATH . '/App/Views/_includes/_layout/Footer.php';
 
  } /* index */
