@@ -5,7 +5,7 @@
 * @package TutsupMVC
 * @since 0.1
 */
-class NoticiasController extends MainController
+class NewsController extends MainController
 {
 
 /**

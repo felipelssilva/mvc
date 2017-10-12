@@ -3,7 +3,7 @@
 if ( ! defined('ABSPATH')) exit;
 
 /* Configura as URLs */
-$adm_uri = HOME_URI . '/noticias/adm/';
+$adm_uri = HOME_URI . '/news/adm/';
 $edit_uri = $adm_uri . 'edit/';
 $delete_uri = $adm_uri . 'del/';
 
@@ -48,7 +48,7 @@ $modelo->sem_limite = true;
 			<tr>
 				<td>
 					Data: <br>
-					<input type="text" name="noticia_data" value="<?php 
+					<input type="date" name="noticia_data" value="<?php 
 					$data = chk_array( $modelo->form_data, 'noticia_data');
 					if ( $data && $data != '0000-00-00 00:00:00' )
 						echo date('d-m-Y H:i:s', strtotime( $data ) );

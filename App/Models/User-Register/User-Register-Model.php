@@ -126,7 +126,8 @@ public function validate_register_form () {
 
 	/* Verifica se as permissões tem algum valor inválido:  */
 	/* 0 a 9, A a Z e , . - _ */
-	if ( preg_match( '/[^0-9A-Za-z,.-_s ]/is', $this->form_data['user_permissions'] ) ) {
+	
+	if ( preg_match( '/\/[^0-9A-Za-z,.-_s ]\/is/', $this->form_data['user_permissions'] ) ) {
 		$this->form_msg = '<p class="form_error">Use just letters, numbers and a comma for permissions.</p>';
 		return;
 	} 

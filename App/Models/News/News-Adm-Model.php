@@ -5,7 +5,7 @@
 * @package TutsupMVC
 * @since 0.1
 */
-class NoticiasAdmModel extends MainModel
+class NewsAdmModel extends MainModel
 {
 
 /**

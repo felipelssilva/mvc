@@ -17,7 +17,7 @@ if ( ! defined('ABSPATH')) exit;
 		
 		<!-- Título -->
 		<h1>
-			<a href="<?php echo HOME_URI?>/noticias/index/<?php echo $noticia['noticia_id']?>">
+			<a href="<?php echo HOME_URI?>/news/index/<?php echo $noticia['noticia_id']?>">
 				<?php echo $noticia['noticia_titulo']?>
 			</a>
 		</h1>
@@ -34,7 +34,7 @@ if ( ! defined('ABSPATH')) exit;
 			
 			<p>
 				<img src="<?php 
-				echo HOME_URI . '/views/_uploads/' . $noticia['noticia_imagem']; ?>">
+				echo HOME_URI . '/App/Views/_uploads/' . $noticia['noticia_imagem']; ?>">
 			</p>
 			
 			<?php echo $noticia['noticia_texto'];?>
